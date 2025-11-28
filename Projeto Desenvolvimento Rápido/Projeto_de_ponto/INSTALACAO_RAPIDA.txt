@@ -1,0 +1,192 @@
+================================================================================
+   INSTALAÇÃO RÁPIDA - GERADOR DE FOLHA DE PONTO
+   Comandos para configurar em um novo computador
+================================================================================
+
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║  OPÇÃO 1: INSTALAÇÃO AUTOMÁTICA (RECOMENDADO - MAIS FÁCIL)               ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+IDEAL PARA: Usuários iniciantes ou instalação rápida
+
+
+PASSO 1: COPIAR ARQUIVOS PARA O NOVO COMPUTADOR
+================================================================================
+Copie toda a pasta do programa (SEM a pasta ".venv"):
+
+Arquivos necessários:
+✓ gerador_ponto.py
+✓ escalas_store.json
+✓ INSTALADOR_COMPLETO.bat
+✓ ABRIR_PROGRAMA.bat
+✓ COMO_RODAR.md
+✓ INSTALACAO_RAPIDA.txt
+✓ logo.txt (OPCIONAL - se existir)
+✓ Pontos Gerados/ (OPCIONAL - PDFs antigos)
+
+⚠️ NÃO copie a pasta ".venv" - ela será criada automaticamente
+
+
+PASSO 2: INSTALAR TUDO AUTOMATICAMENTE
+================================================================================
+1. Dê duplo clique no arquivo:
+   INSTALADOR_COMPLETO.bat
+
+2. O instalador irá:
+   ✓ Baixar e instalar Python 3.12.0 automaticamente
+   ✓ Criar o ambiente virtual (.venv)
+   ✓ Instalar pandas, tkcalendar, reportlab, openpyxl
+
+3. Aguarde a mensagem:
+   "Instalação concluída com sucesso!"
+
+⏱️ Tempo: 5-10 minutos (primeira vez)
+🌐 Requer: Conexão com internet
+
+
+PASSO 3: ABRIR O PROGRAMA
+================================================================================
+Sempre que quiser usar o programa:
+
+Dê duplo clique em: ABRIR_PROGRAMA.bat
+
+Pronto! O programa abrirá instantaneamente.
+
+💡 DICA: Crie um atalho do ABRIR_PROGRAMA.bat na área de trabalho!
+
+
+================================================================================
+   USO DIÁRIO - SUPER SIMPLES!
+================================================================================
+
+Duplo clique em: ABRIR_PROGRAMA.bat
+
+Só isso! 😊
+
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║  OPÇÃO 2: INSTALAÇÃO MANUAL (AVANÇADO - LINHA DE COMANDO)                ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+IDEAL PARA: Usuários avançados ou quando já tem Python instalado
+
+
+PASSO 1: INSTALAR PYTHON MANUALMENTE
+================================================================================
+1. Baixar Python 3.10 ou superior:
+   https://www.python.org/downloads/
+
+2. Durante instalação:
+   [X] Marcar "Add Python to PATH" (IMPORTANTE!)
+   
+3. Verificar instalação:
+   python --version
+
+
+PASSO 2: CRIAR AMBIENTE VIRTUAL E INSTALAR BIBLIOTECAS
+================================================================================
+Abra o PowerShell na pasta do programa e execute:
+
+cd "C:\caminho\para\pasta\do\programa"
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install pandas tkcalendar reportlab openpyxl
+
+
+PASSO 3: RODAR O PROGRAMA
+================================================================================
+Com o ambiente virtual ATIVADO:
+
+python gerador_ponto.py
+
+
+================================================================================
+   USO DIÁRIO - LINHA DE COMANDO
+================================================================================
+
+Toda vez que for usar o programa:
+
+cd "C:\caminho\para\pasta\do\programa"
+.\.venv\Scripts\Activate.ps1
+python gerador_ponto.py
+
+
+╔═══════════════════════════════════════════════════════════════════════════╗
+║  RESUMO - QUAL OPÇÃO ESCOLHER?                                            ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ OPÇÃO 1 (Automática com .BAT)                                           │
+├─────────────────────────────────────────────────────────────────────────┤
+│ ✓ Mais fácil e rápido                                                   │
+│ ✓ Instala Python automaticamente                                        │
+│ ✓ Não precisa digitar comandos                                          │
+│ ✓ Ideal para iniciantes                                                 │
+│ ✓ Usar: Duplo clique em ABRIR_PROGRAMA.bat                             │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│ OPÇÃO 2 (Manual com comandos)                                           │
+├─────────────────────────────────────────────────────────────────────────┤
+│ ✓ Mais controle sobre o processo                                        │
+│ ✓ Útil se já tem Python instalado                                       │
+│ ✓ Requer conhecimento de terminal                                       │
+│ ✓ Ideal para usuários avançados                                         │
+└─────────────────────────────────────────────────────────────────────────┘
+
+
+================================================================================
+   RESOLVER ERROS COMUNS
+================================================================================
+
+ERRO: "Activate.ps1 cannot be loaded because running scripts is disabled"
+SOLUÇÃO: Abra PowerShell como Administrador e execute:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Digite S e pressione Enter
+
+
+ERRO: "No module named 'pandas'" (ou outra biblioteca)
+SOLUÇÃO OPÇÃO 1: Execute novamente o INSTALADOR_COMPLETO.bat
+SOLUÇÃO OPÇÃO 2: 
+.\.venv\Scripts\Activate.ps1
+pip install pandas tkcalendar reportlab openpyxl
+
+
+ERRO: "python não é reconhecido como comando"
+SOLUÇÃO OPÇÃO 1: Execute o INSTALADOR_COMPLETO.bat
+SOLUÇÃO OPÇÃO 2: Reinstale Python marcando "Add Python to PATH"
+
+
+ERRO: Instalação automática não funciona
+SOLUÇÃO: Use a OPÇÃO 2 (instalação manual)
+
+
+================================================================================
+   BIBLIOTECAS INSTALADAS
+================================================================================
+
+O sistema instala automaticamente:
+✓ pandas      → Lê planilhas Excel/CSV
+✓ tkcalendar  → Calendário visual na interface
+✓ reportlab   → Gera PDFs das folhas de ponto
+✓ openpyxl    → Suporte para arquivos .xlsx
+
+
+================================================================================
+   PORTABILIDADE
+================================================================================
+
+✓ Pode renomear a pasta principal (qualquer nome)
+✓ Pode mover para qualquer local (Desktop, Documentos, Pendrive, etc.)
+✓ Pode copiar para outro computador
+✓ Os arquivos .bat funcionam em qualquer lugar
+
+⚠️ Sempre DELETE a pasta ".venv" antes de mover/copiar
+   Ela será recriada automaticamente no novo local
+
+
+================================================================================
+Desenvolvido para facilitar sua vida! 🚀
+Dúvidas? Consulte o arquivo COMO_RODAR.md para guia completo detalhado.
+================================================================================
