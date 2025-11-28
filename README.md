@@ -32,9 +32,9 @@ Confira meu projeto mais relevante e aplicado:
 
 ### 1. Geração de Ponto
 > *Este projeto foi desenvolvido para uso interno na empresa **Alternativa Serviços** (onde trabalhei até Dezembro/2025), focado em otimizar e automatizar o processo de controle e geração de folha de ponto.*
-* **Tecnologias:**  Python, Excel/CSV.]
+* **Tecnologias:**  Python, Excel/CSV.
 * **Status:** Concluído
-* ➡️ [**Link para o Repositório**](link_do_repositorio_do_projeto) 
+* ➡️ [**Link para o Repositório**] https://github.com/Deco0294x/Portifolio_Github.git
 
 ---
 
